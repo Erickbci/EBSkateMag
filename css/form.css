@@ -1,37 +1,43 @@
-html, body {
+
+.conteudo{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     
-    background:gray;
+    
+    
 }
-.container {
+.container-form{
     display: grid;
     grid-template-columns: 3fr 1fr ;
-    grid-template-rows: 10vh 67vh 65vh;
+    grid-template-rows: 10vh 66vh 65vh;
     grid-template-areas: "h h"
                          "m a"
                          "f f";
     grid-gap: 10px;
+    border-radius: none;
+    padding: 0;
 }
+
+  
 header {
-    background:gray;
+    
     grid-area: h;
     
    
 }
 .main {
     
-
+    margin-top: 20px;
     display: grid;
     
     grid-template-rows: 1fr 1fr 1fr;
-    
+    grid-template-rows: 1 67vh 65vh;
     
     grid-column-gap: 30px;
     grid-row-gap: 30px;
 
-    background:gray;
+    
     grid-area: m;
     
     
@@ -42,6 +48,7 @@ header {
     grid-area: a;
     text-align: center;
     border-radius: 5px;
+    height: 442px;
 
     
     
